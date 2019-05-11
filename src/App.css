@@ -1,6 +1,11 @@
 .App {
   text-align: center;
 }
+body{
+  background-image: url("https://wallpaperplay.com/walls/full/7/b/8/273773.jpg") ;
+  background-attachment: fixed;
+background-size: 1524px;
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
