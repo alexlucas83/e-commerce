@@ -5,7 +5,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Carroussel from './Components/Carroussel/Carroussel'
 
 
-function App() {
+export default  () => {
   return (
     <div className="App">
       <Navbar/>
@@ -15,4 +15,3 @@ function App() {
   );
 }
 
-export default App;

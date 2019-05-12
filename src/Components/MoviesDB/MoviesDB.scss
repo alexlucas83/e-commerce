@@ -3,4 +3,65 @@ h3{
     padding-top: 50px;
     padding-bottom: 20px;
     color: aliceblue;
+    font-size: 30px !important;
 }
+.btn-danger{
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 1024px){
+    .poster{
+        width: 420px;
+    }
+    .title{
+        width: 410px;
+        font-size: 30px !important;
+    }
+    .btn-danger{
+        font-size: 20px !important;
+        margin-left: 150px;
+    }
+
+}
+
+
+@media (max-width: 768px){
+    .poster{
+        width: 300px;
+    }
+    .title{
+        width: 300px;
+        font-size: 20px !important;
+    }
+    .btn-danger{
+        font-size: 15px !important;
+        margin-left: 100px;
+    }
+
+}
+
+
+@media (max-width: 375px){
+    .poster{
+        width: 130px;
+    }
+    .title{
+        width: 130px;
+        font-size: 0px !important;
+    }
+    .btn-danger{
+        font-size: 8px !important;
+        margin-left: 35px;
+    }
+    .POverview {
+        font-size: 20px !important;
+    }
+    strong {
+        font-size: 20px !important;
+    }
+    .path{
+        width: 325px;
+    }
+} 

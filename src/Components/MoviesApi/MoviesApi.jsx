@@ -3,21 +3,12 @@ import Axios from 'axios';
 import MoviesBD from '../MoviesDB/MoviesDB';
 import { Container, Row, Col } from 'reactstrap';
 import './MoviesApi.scss';
-import Modals from '../Modals/Modals';
-
-// import MoviesOverview from '../MoviesOverview/MoviesOverview';
-
-
-const baseImageUrl = 'https://image.tmdb.org/t/p/w500'
 
 export default class MoviesApi extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			movies: [],
-			original_title: "",
-			overview: "",
-			poster_path: ""
 		}
 	}
 
@@ -29,33 +20,26 @@ export default class MoviesApi extends Component {
 			.catch(error => console.log(error))
 	}
 
-
 	render() {
 		return (
 			<Container>
+							<h1 className="titleP" >Book your movie tickets fast</h1>
+
 				<Row>
-					{
-						this.state.movies.map((movie) => {
-							return (
-								<Col key={movie.original_title} xs={6}>
-
-									<MoviesBD
-										original_title={movie.original_title}
-										poster_path={`${baseImageUrl}${movie.poster_path}`}
-										overview={movie.overview}
-									/>
-									{/* <Modals /> */}
-
-									{/* <MoviesOverview
-								overview={movie.overview}
-								/> */}
-								</Col>
-							)
-						})
-					}
+					{this.renderMapMovies()}
 				</Row>
 			</Container>
 		)
 	}
+
+	renderMapMovies = () => (
+		this.state.movies.map((movie) => {
+			return (
+				<Col key={movie.original_title} xs={6}>
+					<MoviesBD {...movie} />
+				</Col>
+			)
+		})
+	)
 }
 

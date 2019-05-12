@@ -10,19 +10,19 @@ import {
 
 const items = [
   {
-    src: 'https://cdn.wallpapersafari.com/57/54/FUTJcQ.jpg',
+    src: 'https://wallpaperplay.com/walls/full/d/5/3/140061.jpg',
     altText: '',
-    caption: ''
+    caption: 'Come alone or with friends to watch the latest movies of the moment'
   },
   {
-    src: 'http://wallpapershdnow.com/images/movies/superhero/venom/venom-movie-background-1.jpg',
+    src: 'https://cdn.wallpapersafari.com/20/95/nfcGSK.jpg',
     altText: '',
-    caption: ''
+    caption: 'VIP rooms'
   },
   {
-    src: 'https://avante.biz/wp-content/uploads/Zombie-Background-Images/Zombie-Background-Images-062.jpg',
+    src: 'https://images4.alphacoders.com/294/294956.jpg',
     altText: '',
-    caption: ''
+    caption: 'total immersion'
   }
 ];
 

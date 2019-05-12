@@ -19,3 +19,12 @@
         padding-bottom: 5%;
     }
 }
+
+@media (max-width: 375px){
+  .size-carousel{
+      height: 50%;
+  }
+  p{
+      font-size: 100px !important;
+  }
+}
