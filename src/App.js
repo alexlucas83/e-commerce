@@ -3,6 +3,7 @@ import './App.css';
 import MoviesApi from './Components/MoviesApi/MoviesApi';
 import Navbar from './Components/Navbar/Navbar';
 import Carroussel from './Components/Carroussel/Carroussel'
+import Footer from './Components/Footer/Footer';
 
 
 export default  () => {
@@ -10,7 +11,8 @@ export default  () => {
     <div className="App">
       <Navbar/>
       <Carroussel/>
-      <MoviesApi/>
+      <MoviesApi className="MoviesApi"/>
+      <Footer/>
     </div>
   );
 }

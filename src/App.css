@@ -4,7 +4,9 @@
 body{
   background-image: url("https://wallpaperplay.com/walls/full/7/b/8/273773.jpg") ;
   background-attachment: fixed;
-  background-size: 1524px;
+  /* background-size: 1524px; */
+  background-size: 2000px;
+
 }
 @media (max-width: 375px){
   body{
@@ -40,4 +42,8 @@ body{
   to {
     transform: rotate(360deg);
   }
+}
+
+.MoviesApi{
+  padding-bottom: 20px;
 }
